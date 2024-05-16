@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    font-family: cursive;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+
+#navleft{
+    color: #fff;
+    letter-spacing: 2px;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.450) !important;
+}
+
+#navright{
+    display: flex;
+    justify-content: right;
+    padding-right: 150px;
+    width: 70%;
+    gap: 40px;
+    letter-spacing: 2px;
+}
+
+#navright a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#navright a:hover{
+    text-decoration: underline;
+}
+
+#mainScreen{
+    display: flex;
+    height: 90%;
+}
+
+#left{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.450);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 95px;
+    gap: 50px;
+    position: relative;
+}
+
+#left .place {
+    color: #fff;
+}
+
+.place h4{
+    opacity: 0.5;
+    display: inline-block;
+    border-bottom: 2px solid #ffffff30;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+
+.place h6{
+    opacity: 0.5;
+}
+
+#left .place:nth-child(2) h4{
+    opacity: 1;
+    border-bottom: 2px solid #ffffff70;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+#left .place:nth-child(2) h6{
+    opacity: 1;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+#left #scroll{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.612);
+    transform: translate(-50%,0) rotate(-90deg);
+    transform-origin: 0 50%;
+    gap: 10px;
+}
+
+#scroll #line{
+    width: 70px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.612);
+}
+
+#right{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    text-align: right;
+    transform: translate(0%, -50%);
+}
+
+#right p{
+    color: #fff;
+    font-size: 35px;
+}
+
+#right h1{
+    color: #fff;
+    font-size: 140px;
+}
+
+#right #inputDiv{
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-start;
+    border-bottom: #fff solid 2px;
+}
+
+#rightWrapper small{
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#inputDiv input{
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: cursive;
+    font-size: 20px;
+    outline: none;
+}
+
+#inputDiv i{
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#inputDiv input::placeholder{
+    color: #fff;
+    font-size: 20px;
+    font-family: cursive;
+}
