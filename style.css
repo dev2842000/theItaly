@@ -24,28 +24,29 @@ html, body {
 #nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 10%;
-    align-items: center;
 }
 
-#navleft{
+#nav h3{
     color: #fff;
     letter-spacing: 2px;
-    height: 100%;
     width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.450);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.450) !important;
+    padding-top: 30px;
+}
+
+#nav>i{
+    display: none;
+    color: #fff;
 }
 
 #navright{
-    display: flex;
-    justify-content: right;
     padding-right: 150px;
-    width: 70%;
+    display: flex;
     gap: 40px;
     letter-spacing: 2px;
 }
@@ -64,11 +65,13 @@ html, body {
 #mainScreen{
     display: flex;
     height: 90%;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 #left{
     width: 30%;
-    height: 100%;
+    height: 100%;   
     background-color: rgba(0, 0, 0, 0.450);
     display: flex;
     flex-direction: column;
@@ -154,6 +157,10 @@ html, body {
     border-bottom: #fff solid 2px;
 }
 
+#rightWrapper{
+    width: 100%;
+}
+
 #rightWrapper small{
     color: #fff;
     font-size: 10px;
@@ -184,3 +191,202 @@ html, body {
     font-size: 20px;
     font-family: cursive;
 }
+
+
+@media (max-width: 800px) {
+    #nav{
+        background-color: rgba(0, 0, 0, 0.450);
+    }
+    #nav h3 {
+      background-color: transparent;
+      text-wrap: nowrap;
+      padding-top: 0px;
+      height: 8%;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    #navright{
+        display: none;
+    }
+    #nav>i{
+        display: initial;
+        color: #fff;
+        margin-right: 50px;
+    }
+
+    #main #left{
+        width: 100%;
+        padding-left: 20px;
+        height: 50%;
+        gap: 30px;
+    }
+
+    .place h4{
+        font-size: 15px;
+    }
+    
+    .place h6{
+        font-size: 8px;
+    }
+
+    
+    #left{
+        background-color: transparent;
+      }
+
+    #mainScreen{
+        background-color: rgba(0, 0, 0, 0.450);
+    }
+
+    #left .place:nth-child(2) h4{
+        font-size: 25px;
+    }
+    
+    #left .place:nth-child(2) h6{
+        font-size: 15px;
+    }
+
+    #left #scroll{
+        display: none;
+    }
+    
+    #scroll #line{
+        display: none;
+    }
+
+    #right{
+        width: 100%;
+        position: relative;
+    }
+
+    #right p{
+        font-size: 25px;
+    }
+    
+    #right h1{
+        font-size: 100px;
+    }
+    #rightWrapper small{
+        display: none;
+    }
+    #right #inputDiv{
+        margin-left: 40px;
+    }   
+
+    #inputDiv input{
+        padding: 10px;
+        font-size: 20px;
+        outline: none;
+    }
+    
+    #inputDiv i{
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    #inputDiv input::placeholder{
+        color: #fff;
+        font-size: 15px;
+        font-family: cursive;
+    }
+  }
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    #nav{
+        background-color: rgba(0, 0, 0, 0.450);
+    }
+    #nav h3 {
+      background-color: transparent;
+      text-wrap: nowrap;
+      padding-top: 0px;
+      height: 8%;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    #navright{
+        display: none;
+    }
+    #nav>i{
+        display: initial;
+        color: #fff;
+        margin-right: 50px;
+    }
+
+    #main #left{
+        width: 100%;
+        padding-left: 20px;
+        height: 60%;
+        gap: 30px;
+    }
+
+    .place h4{
+        font-size: 25px;
+    }
+    
+    .place h6{
+        font-size: 15   px;
+    }
+
+    #left{
+      background-color: transparent;
+
+    }
+    #left .place:nth-child(2) h4{
+        font-size: 35px;
+    }
+    
+    #left .place:nth-child(2) h6{
+        font-size: 25px;
+    }
+
+    #left #scroll{
+        display: none;
+    }
+    
+    #scroll #line{
+        display: none;
+    }
+
+    #mainScreen{
+        background-color: rgba(0, 0, 0, 0.450);
+
+    }
+    #right{
+        width: 100%;
+        position: relative;
+    }
+
+    #right p{
+        font-size: 35px;
+    }
+    
+    #right h1{
+        font-size: 120px;
+    }
+
+    #rightWrapper small{
+        display: none;
+    }
+    #right #inputDiv{
+        margin-left: 40px;
+    }   
+
+    #inputDiv input{
+        padding: 10px;
+        font-size: 20px;
+        outline: none;
+    }
+    
+    #inputDiv i{
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    #inputDiv input::placeholder{
+        color: #fff;
+        font-size: 15px;
+        font-family: cursive;
+    }
+  }
